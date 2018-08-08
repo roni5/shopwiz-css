@@ -1,7 +1,8 @@
 .TodoItem{
     width: 100%;
     height: 51px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: auto 0;
     font-size: 30px;
     text-align: left;
     border-radius: 5px;
@@ -14,4 +15,5 @@
         text-align: right;
         float: right;
         margin-right: 37px;
+        display: inline-block;
 }
