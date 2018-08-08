@@ -55,8 +55,8 @@ class App extends Component {
   render() {
     console.log(this.state);
     return (
-      <div styleName="App">
-        
+      <div styleName="Apps">
+
         <Home/>
         <TodoInput createTodo={this.createTodo.bind(this)}></TodoInput>
         {this.list()}

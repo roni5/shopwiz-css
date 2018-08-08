@@ -1,13 +1,14 @@
 import React, {Component}
 from 'react';
-import  About from '../containers/About';
-import base from './base.css';
+import About from '../containers/About';
+import CssModules from 'react-css-modules';
+import styles from './style.css';
 
 class Home extends Component {
     render() {
         return (
-          <div>
-            <div> <h1 className="logo"> {'\u3282'}</h1></div>
+          <div styleName='centralized-container'>
+            <div > <div styleName='burger'> {'\u3282'}</div></div>
             <div><h1>{'\u1f1e'} Shopwiz.net {'\u2728'} {'\u1f1e'} </h1></div>
 
             <div>
@@ -18,5 +19,4 @@ class Home extends Component {
         )
     }
 }
-
-export default Home;
+export default CssModules(Home, styles);

@@ -91,13 +91,16 @@ p {
 /* http://paletton.com */
 h1  {
   font-size: 36px;
-  color: #0990D1;
+  color:rgba(  5, 53, 98,1);
   font-family: sans-serif;
   text-align: center;
 }
- .logo {
+ .burger {
+  font-size: 32px;
   float: left;
-  width: 30%;
+  //background-color: #0990D1;
+  color: rgb(255, 217, 0);
+  width: 100%;
   height: 100%;
  }
 

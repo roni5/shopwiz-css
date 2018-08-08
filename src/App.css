@@ -1,14 +1,22 @@
 .App {
   text-align: center;
   font-family: "Lato", sans-serif;
-  width: 600px;
+  width: 800px;
   margin: 0 auto;
   min-height: 600px;
   background: #ffffff;
   overflow: hidden;
   margin-top: 50px;
+
 }
 
+.Apps {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+align-items: center;
+ margin: 20px;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
