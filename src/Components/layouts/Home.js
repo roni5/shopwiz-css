@@ -1,15 +1,18 @@
 import React, {Component}
 from 'react';
-import News from '../containers/About';
+import  About from '../containers/About';
 import base from './base.css';
 
 class Home extends Component {
     render() {
         return (
-        <div>
-            <div><h1>Welcome to Shopwiz.net {'\u2728'} </h1></div>
+          <div>
+            <div> <h1 className="logo"> {'\u3282'}</h1></div>
+            <div><h1>{'\u1f1e'} Shopwiz.net {'\u2728'} {'\u1f1e'} </h1></div>
+
             <div>
-                <News />
+              <About />
+
             </div>
         </div>
         )

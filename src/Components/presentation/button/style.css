@@ -1,8 +1,19 @@
 .button{
   background-color: #039be5;
   outline: none;
+  padding-top: 29%;
   padding: 10px;
-  border: none;
-  border-radius: 2px;
+  border: 2px solid #022546 ;
+  border-left:  2px solid  #022546 ;
+  border-right:  2px solid #022546 ;
+  border-radius: 4px;
   width: 100px;
+}
+.button {
+  height: 40px;
+  width: 200px;
+}
+button {
+  height: 40px;
+  width: 200px;
 }
