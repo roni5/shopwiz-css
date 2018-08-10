@@ -4,9 +4,11 @@ import CssModules from 'react-css-modules';
 
 class Button extends React.Component{
 
-  render(){
+  render() {
     return (
-      <button styleName='button'>Enter On KeyBoard</button>
+      <div>
+        <button styleName='button'>Click Box </button>
+      </div>
     );
   }
 }

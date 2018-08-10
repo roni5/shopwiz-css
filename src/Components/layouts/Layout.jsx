@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../presentation/button/Button'
+import Button from '../presentation/button/Button';
 class Layout extends Component {
     render() {
         return (
