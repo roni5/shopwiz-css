@@ -1,16 +1,19 @@
-import React, { Component } from 'react'
-import a from './App.css'
+import React, { Component } from 'react';
+import { Route, BrowserRouter } from 'react-router-dom';
+import About from './Components/layouts/About';
+import Layout from './Components/layouts/Layout';
+import a from './App.css';
 import CssModules from 'react-css-modules'
 import TodoInput from './Components/TodoInput/TodoInput'
 import TodoItem from './Components/TodoItem/TodoItem'
 import Button from './Components/presentation/button/Button'
-import Layout from './Components/layouts/Layout';
+
 import Home from './Components/layouts/Home';
-import _ from 'lodash'
+import  Hello  from './Hello';
+import _ from 'lodash';
 
 
 class App extends Component {
-
   constructor(props) {
     super(props);
 
@@ -51,17 +54,29 @@ class App extends Component {
           });
 
   }
+  componentDidMount(){
+
+  }
 
   render() {
-    console.log(this.state);
-    return (
-      <div styleName="Apps">
 
-        <Home/>
-        <TodoInput createTodo={this.createTodo.bind(this)}></TodoInput>
+    return (
+      <BrowserRouter>
+         <Layout>
+      <div styleName="Apps">
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        <TodoInput createTodo={this.createTodo.bind(this)}> </TodoInput>
         {this.list()}
         <Button />
-      </div>
+        <div style={{ color: 'red' , padding:'10%'}} >
+          <div className="centralized-container">
+
+          </div>
+          </div>
+          </div>
+          </Layout>
+      </BrowserRouter>
     );
   }
 }

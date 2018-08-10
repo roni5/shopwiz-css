@@ -5,7 +5,7 @@ class Layout extends Component {
     return (
         <div>
             <div>
-                <h1>Shopwiz.net - Breaking new Products</h1>
+                <h2> - Breaking news - </h2>
             </div>
             <div>
                 { this.props.children }

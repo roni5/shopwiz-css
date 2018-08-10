@@ -11,11 +11,12 @@
 }
 
 .Apps {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-align-items: center;
- margin: 20px;
+    display: flex;
+	   flex-direction: column;
+	   -webkit-box-align: center;
+   align-items: center;
+
+	  margin: 20px;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -40,4 +41,44 @@ align-items: center;
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+/* style.css*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+/* Not needed with the cssTransition helper */
+
+.animate {
+  animation-duration: 800ms;
 }
