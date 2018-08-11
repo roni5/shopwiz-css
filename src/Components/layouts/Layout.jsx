@@ -1,23 +1,38 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import CssModules from 'react-css-modules';
+import n from './nav.css'
+//import styles from './style.css';
 import Button from '../presentation/button/Button';
+
+
+
 class Layout extends Component {
     render() {
         return (
-            <div>
-                <div>
-                    <ul>
-                        <li><Link to={'/'}> Home</Link></li>
+
+            <nav styleName='centralized-container'>
+
+                    <Link to="/">
+                        <span styleName='burger'> {'\u2728'} Shopwiz.net {'\u2728'}</span>
+                    <div class="icon icon-white" />
+
+                    </Link>
+
+                <ul>
+
+                        <li ><Link to={'/'}>{'\u3289'}  Home</Link></li>
                         <li><Link to={'/products'}> Tshirts</Link></li>
-                        <li><Link to={'/about'}>About</Link></li>
+                        <li><Link to={'/about'}>About </Link></li>
                     </ul>
-                </div>
                 <div>
                     {this.props.children}
+
                 </div>
-            </div>
+            </nav>
+
         );
     }
 }
 
-export default Layout;
+export default CssModules(Layout, n)

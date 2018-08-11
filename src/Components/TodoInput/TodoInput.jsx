@@ -1,5 +1,4 @@
 import React from 'react';
-
 import CssModules from 'react-css-modules';
 import s from './todoinput.css'
 
