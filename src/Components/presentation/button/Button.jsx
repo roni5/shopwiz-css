@@ -7,7 +7,7 @@ class Button extends React.Component{
   render() {
     return (
       <div>
-        <button styleName='button'>Click Box </button>
+        <button styleName='button'></button>
       </div>
     );
   }
