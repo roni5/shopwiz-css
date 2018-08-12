@@ -11,14 +11,14 @@ class Layout extends Component {
         return (
             <nav >
                 <div class="icon icon-white" />
-                <Link to="/">
+                <NavLink to="/">
                     <span  styleName='siteHeader'> {'\u2728'} Shopwiz.net {'\u2728'}</span>
 
-                </Link>
+                </NavLink>
                 <ul>
-                    <li ><Link to={'/'}> {'\u1f1e'} Home</Link></li>
-                    <li><Link to={'/products'}> Tshirts</Link></li>
-                    <li><Link to={'/about'}>About </Link></li>
+                    <li ><NavLink to={'/'} activeClassName="active"> {'\u1f1e'} Home</NavLink></li>
+                    <li><NavLink to={'/products'} activeClassName="current"> Tshirts</NavLink></li>
+                    <li><NavLink to={'/about'} activeClassName="current">About </NavLink></li>
                 </ul>
                 <div>
                     {this.props.children}

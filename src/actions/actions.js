@@ -11,3 +11,9 @@ function productsReceived(products) {
         products: products
     }
 }
+
+export function fetchProducts(fakeProducts){
+    return dispatch => {
+        dispatch(productsReceived(fakeProducts));
+    }
+}
