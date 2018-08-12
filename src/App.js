@@ -30,9 +30,15 @@ class App extends Component {
               <Route path="/products" component={Products} />
               <Route path="/about" component={About} />
               <Route path='/products/:id' component={ProductDetail} />
-              <div className="centralized-container">Space <Button />Space</div>
+              <div className="centralized-container">
+                <section>
+                <h2> Panel</h2>
+                <Button />Space
 
-              <div className="centralized-container"></div>
+            </section>
+              </div>
+
+
 
             </div>
           </Layout>

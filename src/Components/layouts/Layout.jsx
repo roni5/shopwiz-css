@@ -9,13 +9,14 @@ import n from './nav.css';
 class Layout extends Component {
     render() {
         return (
-            <nav styleName='centralized-container'>
+            <nav >
+                <div class="icon icon-white" />
                 <Link to="/">
-                    <span styleName='burger'> {'\u2728'} Shopwiz.net {'\u2728'}</span>
-                    <div class="icon icon-white" />
+                    <span  styleName='siteHeader'> {'\u2728'} Shopwiz.net {'\u2728'}</span>
+
                 </Link>
                 <ul>
-                    <li ><Link to={'/'}>{'\u3289'}  Home</Link></li>
+                    <li ><Link to={'/'}> {'\u1f1e'} Home</Link></li>
                     <li><Link to={'/products'}> Tshirts</Link></li>
                     <li><Link to={'/about'}>About </Link></li>
                 </ul>

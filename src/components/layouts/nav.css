@@ -1,24 +1,28 @@
 .centralized-container {
   display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
+  flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
-   margin: 20px;
+  margin: 20px;
 }
-.burger {
-  font-size: 32px;
+.siteHeader {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 34px;
   float: left;
-  background-color: #0990D1;
-  color: rgb(255, 217, 0);
+  background-color: #346A9E;
+  color: rgb(239, 244, 250);
   width: 100%;
   height: 100%;
-  border-radius: 4px;
- }
+}
 .icon {
   width: 48px;
   height: 48px;
   display: inline-block;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg) no-repeat 50% 50%;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/18515/heart.svg)
+    no-repeat 50% 50%;
   background-size: cover;
 }
 .icon-white {
@@ -41,11 +45,10 @@ em {
     line-height: 260%;
     float: left;
   }
-
 }
 
 nav {
-  padding-top:0.1em;
+  padding-top: 0.1em;
   width: 100%;
   z-index: 12;
   display: flex;
@@ -56,28 +59,26 @@ nav {
   margin-bottom: 20px;
   background: #f8f8f8;
   text-underline-position: none;
-  text-decoration: none
+  text-decoration: none;
 }
 nav > ul {
   text-decoration: none;
-  padding-top:1em;
-  padding-left:0.4em;
+  padding-top: 1em;
+  padding-left: 0.4em;
   display: flex;
   justify-content: last baseline;
   text-decoration: none;
-
 }
 
 nav > ul > li > a {
-text-decoration: none !important;
-display:inline-block;
- margin-right:10px;
+  text-decoration: none !important;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 nav > ul > li > a.active {
   text-decoration: none;
   color: tomato;
-
 }
 a {
   font-size: 1em;
