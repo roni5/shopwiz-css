@@ -59,9 +59,7 @@ p {
   line-height: 1.6;
   margin-bottom: 1em;
 }
-.burger{
-  background-color: #022546
-}
+
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=13-0u0kvZnpnhuBuht3CYj1M7dD */
 /* As hex codes */
@@ -93,15 +91,6 @@ h1  {
   font-family: sans-serif;
   text-align: center;
 }
- .burger {
-  font-size: 32px;
-  float: left;
-  //background-color: #0990D1;
-  color: rgb(255, 217, 0);
-  width: 100%;
-  height: 100%;
- }
-
 .warning {
   background-color: red;
   text-align: center;

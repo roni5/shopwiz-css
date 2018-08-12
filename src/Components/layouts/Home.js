@@ -8,12 +8,14 @@ class Home extends Component {
     render() {
         return (
             <div styleName='centralized-container'>
-                <div><Products />
+                <div>
                     <section>
                         <h1>Products</h1>
-                        <img src="https://unsplash.it/200?random" height="200" width="200" />
-                        <img src="https://unsplash.it/201?random" height="200" width="200" />
-
+                        <Products />
+                        <div className="em">
+                        <img  src="https://unsplash.it/200?random" height="200" width="200" />
+                        <img  src="https://unsplash.it/201?random" height="200" width="200" />
+                        </div>
                     </section>
                 </div>
                 <Button> Welcome </Button>
