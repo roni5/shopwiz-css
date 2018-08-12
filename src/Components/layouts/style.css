@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=lato:100,300,400,700,900");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -46,7 +44,7 @@ table {
 }
 
 body {
-  background: #221f1f;
+  background: #346A9E ;
   color: #ffffff;
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -55,6 +53,7 @@ body {
 }
 
 p {
+  color: #022546;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.6;
@@ -63,15 +62,12 @@ p {
 
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=13-0u0kvZnpnhuBuht3CYj1M7dD */
-
 /* As hex codes */
-
 .color-primary-0 { color: #094279 }	/* Main Primary color */
 .color-primary-1 { color: #346A9E }
 .color-primary-2 { color: #135696 }
 .color-primary-3 { color: #053562 }
 .color-primary-4 { color: #022546 }
-
 /* As RGBa codes */
 .rgba-primary-0 { color: rgba(  9, 66,121,1) }	/* Main Primary color */
 .rgba-primary-1 { color: rgba( 52,106,158,1) }
@@ -95,15 +91,6 @@ h1  {
   font-family: sans-serif;
   text-align: center;
 }
- .burger {
-  font-size: 32px;
-  float: left;
-  //background-color: #0990D1;
-  color: rgb(255, 217, 0);
-  width: 100%;
-  height: 100%;
- }
-
 .warning {
   background-color: red;
   text-align: center;
@@ -115,11 +102,4 @@ h1  {
 .app-content{
     padding-bottom: 72px;
     margin: 0 44px;
-}
-.centralized-container {
-   display: flex;
-	   flex-direction: column;
-	   -webkit-box-align: center;
-   align-items: center;
-	  margin: 20px;
 }

@@ -1,6 +1,5 @@
-import React from 'react'
-import propTypes from 'prop-types';
-import CssModules from 'react-css-modules'
+import React from 'react';
+import CssModules from 'react-css-modules';
 import s from './todoinput.css'
 
 class TodoInput extends React.Component{
@@ -13,9 +12,7 @@ class TodoInput extends React.Component{
     }
 }
 
-TodoInput.propTypes = {
-    createTodo: propTypes.func.isRequired
-}
+
 
 
 export default CssModules(TodoInput, s)

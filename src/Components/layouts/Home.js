@@ -1,21 +1,25 @@
-import React, {Component}
-from 'react';
-import About from '../containers/About';
+import React, {Component} from 'react';
+import Products from '../containers/Products';
 import CssModules from 'react-css-modules';
+import Button from '../presentation/button/Button';
 import styles from './style.css';
 
 class Home extends Component {
     render() {
         return (
-          <div styleName='centralized-container'>
-            <div > <div styleName='burger'> {'\u3282'}</div></div>
-            <div><h1>{'\u1f1e'} Shopwiz.net {'\u2728'} {'\u1f1e'} </h1></div>
-
-            <div>
-              <About />
-
-            </div>
-        </div>
+            <div styleName='centralized-container'>
+                <div>
+                    <section>
+                        <h1>Products</h1>
+                        <Products />
+                        <div className="em">
+                        <img  src="https://unsplash.it/200?random" height="200" width="200" />
+                        <img  src="https://unsplash.it/201?random" height="200" width="200" />
+                        </div>
+                    </section>
+                </div>
+                <Button> Welcome </Button>
+                            </div>
         )
     }
 }
