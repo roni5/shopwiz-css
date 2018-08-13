@@ -12,6 +12,7 @@ import Button from './components/presentation/button/Button'
 import Home from './components/layouts/Home';
 import Products from './components/containers/Products';
 import ProductsNews from './components/containers/ProductsNews';
+import ProductsSubmit from './components/containers/ProductsSubmit';
 //import  Hello  from './Hello';
 
 
@@ -40,12 +41,14 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/products" component={Products} />
               <Route path="/about" component={About} />
-              <Route path='/products/:id' component={ProductsNews} />
+                <Route path='/products/:id' component={ProductsNews} />
+                <Route path='/submit' component={ProductsSubmit}/>
               </Switch>
                 <div className="centralized-container">
                 <section>
-                 <h2> Panel</h2>
-                   <Button />Space
+                  <h2> Panel</h2>
+                  <ProductsSubmit />
+                   <Button />
 
                 </section>
               </div>

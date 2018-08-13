@@ -10,7 +10,7 @@ class ProductDetail extends Component {
         return (
             <div>
             <section>
-                <h2>Help{this.props.data.title}</h2>
+                <h2>PD {this.props.data.title}</h2>
                 <p>{this.props.data.body}</p>
             <p> <NavLink to="/">Back</NavLink> </p>
                 </section>
@@ -22,7 +22,7 @@ class ProductDetail extends Component {
 
 ProductDetail.propTypes = {
     data: PropTypes.shape({
-        id: PropTypes.string.isRequired,
+        _id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         body: PropTypes.string.isRequired
     })

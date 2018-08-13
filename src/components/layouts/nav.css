@@ -13,7 +13,7 @@
   align-items: center;
   font-size: 1.5rem;
   line-height: 250%;
-  //display: inline-block;
+  display: inline-block;
   float: left;
   background-color: #346A9E;
   color: rgb(239, 244, 250);
@@ -40,19 +40,20 @@ em {
   font-size: 0.9rem;
   float: left;
   display: block;
-  img {
+ }
+  em > img {
     display: inline-block;
     margin-top: 5px;
     width: 15px;
     float: left;
   }
-  .letterhead {
+  em > img > .letterhead {
     display: inline-block;
     font-weight:bold;
     line-height: 260%;
     float: left;
   }
-}
+
 
 nav {
   -webkit-text-size-adjust: 100%;
@@ -71,7 +72,7 @@ nav {
   text-decoration: none;
 }
 nav > ul {
-  display: block;
+  display: inline-block;
   padding-top: 1em;
   padding-left: 0.4em;
   display: flex;
@@ -88,8 +89,9 @@ nav > ul > li > a {
   text-decoration: none;
   display: inline-block;
   margin-right: 10px;
+  border-radius: 0 4px 4px 4px;
+  box-shadow: inset 2px 0 2px rgba(0,0,0,.15);
 }
-
 a.active {
   color: rgba( 2, 37, 70,1);
 }
@@ -99,7 +101,6 @@ nav > ul > li > a.active:hover  {
   background-color: blue;
   opacity: 1;
   visibility: visible;
-  //border: solid 1px black;
   color: white ;
 
 }

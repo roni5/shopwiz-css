@@ -1,38 +1,62 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+const ProductsController = require('../controllers/ProductsController')
 
-const fakeProducts = [{
-    id: '1',
-    title: 'Roni from the  Server',
-    teaser: 'Mad owl seen tormenting drivers in Morecambe',
-    body: 'This is some body text regarding the news story of the mad owl tormenting drivers in Morecambe'
-}, {
-    id: '2',
-    title: 'Owl stowaway',
-    teaser: 'Despicable owl impersonates passenger to board flight to Luton',
-    body: 'This is some body text regarding the news story of the owl making its way onto a domestic flight to luton'
-}, {
-    id: '3',
-    title: 'Owl steals pork pie',
-    teaser: 'This morning a rogue owl stole a pork pie from a shop in Swindon.',
-    body: 'This is some body text regarding the news story of the owl stealing a pork pie from a shop in swindon'
-}];
 
 router.get('/', function(req, res, next) {
-    res.status(200).send({
-      data: fakeProducts
-    })
-})
+
+  ProductsController.find(req.query, function(err, results){
+      if(err){
+          console.log(err);
+          res.json({
+              success: 0,
+              error: err
+          });
+          return;
+      }
+      res.json({
+          success: 1,
+          data: results
+      });
+  });
+});
 
 router.get('/:id', function(req, res, next){
-    const id = req.params.id
+  const id = req.params.id;
 
-    const picked = fakeProducts.find(o => o.id === id);
+  ProductsController.findById(id, function(err, result){
 
-    res.status(200).send({
-        data: picked
-    })
+      if(err){
+          console.log(err);
+          res.status(500).json({
+              success: 0,
+              data: result
+          });
+          return;
+      }
 
-})
+      res.status(200).json({
+          success: 1,
+          data: result
+      });
+  });
+});
 
+router.post('/', function(req, res, next) {
+  ProductsController.create(req.body, function(err, result){
+      if(err){
+          console.log(err);
+          res.json({
+              success: 0,
+              error: err
+          })
+          return;
+      }
+
+      res.json({
+          success: 1,
+          data: result
+      });
+  });
+});
 module.exports = router
