@@ -2,21 +2,12 @@ import React, { Component } from 'react';
 import ProductListing from '../presentation/ProductListing';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/actions';
+//import { fetchProductsItem } from '../../actions/actions';
 
 class Products extends Component {
+
     componentDidMount(){
-
-        var fakeProducts = [{
-            id: '1',
-            title: 'Mad owl chases car',
-            teaser: 'Mad owl seen tormenting drivers in Morecambe'
-        }, {
-            id: '2',
-            title: 'Owl stowaway',
-            teaser: 'Despicable owl impersonates passenger to board flight to Luton'
-        }];
-
-        this.props.dispatch(fetchProducts(fakeProducts));
+        this.props.dispatch(fetchProducts());
     }
     render() {
         const productsItems = this.props.products.map( (products, i) => {
@@ -25,8 +16,11 @@ class Products extends Component {
 
         return (<div>
                         <div>
-                <h2>News Items</h2>
-                {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div>Sorry we have no news</div>}
+                <h2>Current Data Being Viewed</h2>
+                {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div> <ul>
+                    <li>Sorry No Stock ! </li>
+                    <li></li>
+                </ul>  </div>}
 
             </div>
 

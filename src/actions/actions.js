@@ -5,6 +5,8 @@ console.log('actionTypes', actionTypes);
 //import { productsReceived } from './actionCreators'
 //dispatch(productsReceived('Use Redux'))
 
+
+
 function productsReceived(products) {
     return {
         type: actionTypes.PRODUCTS_RECEIVED,
@@ -12,8 +14,30 @@ function productsReceived(products) {
     }
 }
 
-export function fetchProducts(fakeProducts){
+export function fetchProducts(){
     return dispatch => {
-        dispatch(productsReceived(fakeProducts));
+        return fetch(`/products`)
+        .then( (response) => response.json() )
+        .then( (data) => dispatch(productsReceived(data.data)))
+        .catch( (e) => console.log(e) );
+    }
+}
+
+
+
+function productsItemReceived(productsItem){
+    return {
+        type: actionTypes.PRODUCTS_ITEM_RECEIVED,
+        productsItem: productsItem
+    }
+}
+
+
+export function fetchProductsItem(id){
+    return dispatch => {
+        return fetch(`/products/${id}`)
+        .then( (response) => response.json() )
+        .then( (data) => dispatch(productsItemReceived(data.data)))
+        .catch( (e) => console.log(e) );
     }
 }

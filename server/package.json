@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "yes",
+  "description": "React with css Modules",
+  "repository": "https://github.com/roni5/shopwiz-css",
+  "author": "Roni McGuinness",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.7"
+  }
+}

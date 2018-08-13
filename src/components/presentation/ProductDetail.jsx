@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 
 
@@ -7,17 +8,24 @@ class ProductDetail extends Component {
     render() {
 
         return (
+            <div>
             <section>
-                <h1>T-Shirts</h1>
-                <ul>
-                    <li><img src="https://unsplash.it/200?random" height="200" width="200" alt="t-shirts"/></li>
-                    <li>This is Out of Stock</li>
-                </ul>
+                <h2>Help{this.props.data.title}</h2>
+                <p>{this.props.data.body}</p>
             <p> <NavLink to="/">Back</NavLink> </p>
-           </section>
+                </section>
+                </div>
 
         )
     }
 }
+
+ProductDetail.propTypes = {
+    data: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        body: PropTypes.string.isRequired
+    })
+};
 
 export default ProductDetail;
