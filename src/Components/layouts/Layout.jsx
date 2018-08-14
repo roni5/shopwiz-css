@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import CssModules from 'react-css-modules';
 import n from './nav.css';
 
@@ -10,15 +10,16 @@ class Layout extends Component {
     render() {
         return (
             <nav >
-                <div class="icon icon-white" />
-                <Link to="/">
+                <div />
+                <NavLink to="/">
                     <span  styleName='siteHeader'> {'\u2728'} Shopwiz.net {'\u2728'}</span>
 
-                </Link>
+                </NavLink>
                 <ul>
-                    <li ><Link to={'/'}> {'\u1f1e'} Home</Link></li>
-                    <li><Link to={'/products'}> Tshirts</Link></li>
-                    <li><Link to={'/about'}>About </Link></li>
+                    <li ><NavLink to={'/'} styleName="active"> {'\u1f1e'} Home</NavLink></li>
+                    <li><NavLink to={'/products/'} styleName="active"> Tshirts</NavLink></li>
+                    <li><NavLink to={'/page'} styleName="active">Product Page </NavLink></li>
+                    <li><NavLink to={'/about'} styleName="active">About </NavLink></li>
                 </ul>
                 <div>
                     {this.props.children}

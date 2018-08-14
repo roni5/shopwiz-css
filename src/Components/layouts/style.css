@@ -12,6 +12,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,10 +23,25 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
+  -webkit-text-size-adjust: 100%;
   display: block;
 }
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=13-0u0kvZnpnhuBuht3CYj1M7dD */
+/* As hex codes */
+.color-primary-0 { color: #094279 }	/* Main Primary color */
+.color-primary-1 { color: #346A9E }
+.color-primary-2 { color: #135696 }
+.color-primary-3 { color: #053562 }
+.color-primary-4 { color: #022546 }
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(  9, 66,121,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba( 52,106,158,1) }
+.rgba-primary-2 { color: rgba( 19, 86,150,1) }
+.rgba-primary-3 { color: rgba(  5, 53, 98,1) }
+.rgba-primary-4 { color: rgba(  2, 37, 70,1) }
 body {
-  line-height: 1;
+  line-height: 1rem;
 }
 ol, ul {
   list-style: none;
@@ -44,36 +60,34 @@ table {
 }
 
 body {
-  background: #346A9E ;
-  color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  color: black ;
   font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 p {
   color: #022546;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 0.9em;
+}
+h1{
+  font-size: 1rem;
+  margin-bottom: 0.4em;
+  line-height: 80%;
+  width: 100%;
+  font-weight: 700;
+  color: #346A9E ;
+}
+ h2, h3{
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin: auto 0;
 }
 
-/* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=13-0u0kvZnpnhuBuht3CYj1M7dD */
-/* As hex codes */
-.color-primary-0 { color: #094279 }	/* Main Primary color */
-.color-primary-1 { color: #346A9E }
-.color-primary-2 { color: #135696 }
-.color-primary-3 { color: #053562 }
-.color-primary-4 { color: #022546 }
-/* As RGBa codes */
-.rgba-primary-0 { color: rgba(  9, 66,121,1) }	/* Main Primary color */
-.rgba-primary-1 { color: rgba( 52,106,158,1) }
-.rgba-primary-2 { color: rgba( 19, 86,150,1) }
-.rgba-primary-3 { color: rgba(  5, 53, 98,1) }
-.rgba-primary-4 { color: rgba(  2, 37, 70,1) }
 
 .centralized-container {
   display: flex;
