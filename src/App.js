@@ -39,15 +39,15 @@ class App extends Component {
         <BrowserRouter>
           <Layout>
             <div styleName="Apps">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/product/" component={Products} />
-              <Route path="/about" component={About} />
-              <Route path='/products/:id' component={ProductsNews} />
-                <Route path='/page' component={Page} />
-                <Route path='/submit' component={ProductsSubmit}/>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/product/" component={Products} />
+                <Route path="/about" component={About} />
+                <Route path='/products/:id' component={ProductsNews} />
+                <Route path='/contact' component={Page} />
+                <Route path='/submit' component={ProductsSubmit} />
               </Switch>
-                <div className="centralized-container">
+              <div className="centralized-container">
                 <section>
                   <h2> Home page App.js</h2>
 

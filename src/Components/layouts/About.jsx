@@ -6,7 +6,7 @@ class About extends Component {
         return (
             <div>
                 <section>
-                    <h1>Products</h1>
+                    <h1>About</h1>
                     <div>
                         <p>
                             That's a crooked tree. We'll send him to Washington. Those great
@@ -33,7 +33,7 @@ class About extends Component {
                             straight. Not every limb is perfect.
                      </p>
                     </div>
-                    <p><Link to="/">Back</Link> </p>
+                    <div><Link to="/">Back</Link> </div>
                 </section>
             </div>
         );
