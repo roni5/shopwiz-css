@@ -17,7 +17,8 @@ class Layout extends Component {
                 </NavLink>
                 <ul>
                     <li ><NavLink to={'/'} styleName="active"> {'\u1f1e'} Home</NavLink></li>
-                    <li><NavLink to={'/products'} styleName="active"> Tshirts</NavLink></li>
+                    <li><NavLink to={'/products/'} styleName="active"> Tshirts</NavLink></li>
+                    <li><NavLink to={'/page'} styleName="active">Product Page </NavLink></li>
                     <li><NavLink to={'/about'} styleName="active">About </NavLink></li>
                 </ul>
                 <div>

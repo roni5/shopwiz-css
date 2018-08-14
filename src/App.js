@@ -12,7 +12,9 @@ import Button from './components/presentation/button/Button'
 import Home from './components/layouts/Home';
 import Products from './components/containers/Products';
 import ProductsNews from './components/containers/ProductsNews';
+import ProductDetail from './components/presentation/ProductDetail';
 import ProductsSubmit from './components/containers/ProductsSubmit';
+import Page from './components/layouts/Page';
 //import  Hello  from './Hello';
 
 
@@ -39,15 +41,16 @@ class App extends Component {
             <div styleName="Apps">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/products" component={Products} />
+              <Route path="/product/" component={Products} />
               <Route path="/about" component={About} />
-                <Route path='/products/:id' component={ProductsNews} />
+              <Route path='/products/:id' component={ProductsNews} />
+                <Route path='/page' component={Page} />
                 <Route path='/submit' component={ProductsSubmit}/>
               </Switch>
                 <div className="centralized-container">
                 <section>
-                  <h2> Panel</h2>
-                  <ProductsSubmit />
+                  <h2> Home page App.js</h2>
+
                    <Button />
 
                 </section>

@@ -7,10 +7,16 @@ console.log('actionTypes', actionTypes);
 
 
 
-function productsReceived(products) {
+ export function productsReceived(products) {
     return {
         type: actionTypes.PRODUCTS_RECEIVED,
         products: products
+    }
+ }
+
+  export function productsItemLoading(){
+    return {
+        type: actionTypes.PRODUCTS_ITEM_LOADING
     }
 }
 
@@ -37,7 +43,7 @@ export function submitNewProducts(data){
     }
 }
 
-function productsItemReceived(productsItem){
+ export function productsItemReceived(productsItem){
     return {
         type: actionTypes.PRODUCTS_ITEM_RECEIVED,
         productsItem: productsItem

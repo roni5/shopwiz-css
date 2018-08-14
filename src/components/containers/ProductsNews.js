@@ -1,7 +1,8 @@
 import React, { Component} from 'react';
 import ProductDetail from '../presentation/ProductDetail';
 import { connect } from 'react-redux';
-import { fetchProductsItem } from '../../actions/actions';
+import { fetchProductsItem , productsItemLoading } from '../../actions/actions';
+
 
 class ProductsNews extends Component {
 
@@ -17,7 +18,8 @@ class ProductsNews extends Component {
             <div>
                 <h2>New T-Shirts </h2>
                 <ul>
-                    { productsItem ? <ProductDetail data={productsItem} /> : null}
+                    <li>Products News</li>
+                  <li>  { !this.props.productsItemLoading ? <ProductDetail data={productsItem} /> : null} </li>
                 </ul>
             </div>
         )
@@ -26,7 +28,8 @@ class ProductsNews extends Component {
 
 const mapStateToProps = state => {
     return {
-        productsItem: state.products.productsItem
+        productsItem: state.products.productsItem,
+        productsItemLoading: state.products.productsItemLoading
     }
 }
 

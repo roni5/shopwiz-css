@@ -1,5 +1,4 @@
 import React, { Component} from 'react';
-import ProductDetail from '../presentation/ProductDetail';
 import { connect } from 'react-redux';
 import { submitNewProducts} from '../../actions/actions';
 import { withRouter } from "react-router-dom";
