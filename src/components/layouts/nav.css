@@ -7,6 +7,8 @@
 }
 .siteHeader {
   -webkit-text-size-adjust: 100%;
+  font-family: neuzeit-grotesk,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
   font-weight: bold;
   padding-top: 0.1em;
   display: flex;
@@ -31,7 +33,13 @@
   height: 57%;
   margin-left: auto;
 }
-
+.siteHeader:hover {
+  display: block;
+  position: initial;
+  background-color: rgba(  5, 53, 98,1);
+  opacity: 1;
+  visibility: visible;
+}
 nav {
   display: inline-block;
   -webkit-text-size-adjust: 100%;
@@ -72,7 +80,7 @@ nav > ul > li > a {
   box-shadow: inset 2px 0 2px rgba(0, 0, 0, 0.15);
 }
 a.active {
-  color: red;
+  color:rgba(2, 37, 70, 1);
 }
 nav > ul > li > a.active:hover {
   display: block;
@@ -80,18 +88,10 @@ nav > ul > li > a.active:hover {
   background-color:rgba(2, 37, 70, 1);
   opacity: 1;
   visibility: visible;
-  //color: white;
-  color: rgba( 52,106,158,1);
-}
-.siteHeader:hover {
-  display: block;
-  position: initial;
-  background-color: rgba(  5, 53, 98,1);
-  opacity: 1;
-  visibility: visible;
-  //color: white;
+  color: white;
 
 }
+
 li:focus-within a {
   outline: none;
 }
