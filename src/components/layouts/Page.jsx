@@ -14,7 +14,8 @@ class Page extends Component {
             <div>
               <h1>Contact</h1>
               <ProductsSubmit />
-              <div StyleName="img">
+              <div styleName='centralized-container'>
+
                 <img src="https://unsplash.it/200?random" height="200" width="200" />
               </div>
             </div>
