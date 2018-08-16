@@ -19,6 +19,7 @@
   line-height: 100%;
   display: inline-block;
   float: right;
+  border-image: initial;
   background-color: #346a9e;
   color: rgb(239, 244, 250);
   width: 100%;
@@ -32,15 +33,14 @@
   align-items: center;
   height: 57%;
   margin-left: auto;
-
+  transition: 0.1s ease-out;
 
 }
 .siteHeader:hover {
-  display: block;
+  transform: translate(3px, -5px);
+  box-shadow: rgba(0, 0, 0, 0.2) -6px 10px 40px;
   position: initial;
   background-color: rgba(  5, 53, 98,1);
-  opacity: 1;
-  visibility: visible;
 }
 nav {
   display: inline-block;
@@ -79,7 +79,7 @@ nav > ul > li > a {
   display: inline-block;
   margin-right: auto;
   border-radius: 4px 4px 4px 4px;
- 
+
 }
 a.active {
   color:rgba(2, 37, 70, 1);
