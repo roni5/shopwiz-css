@@ -3,7 +3,7 @@ import Products from '../containers/Products';
 import ProductDetail from '../presentation/ProductDetail';
 import CssModules from 'react-css-modules';
 import Button from '../presentation/button/Button';
-
+import { Kart }from '../presentation/kart/Kart';
 import styles from './style.css';
 
 class Home extends Component {
@@ -21,7 +21,8 @@ class Home extends Component {
 
                     </section>
                 </div>
-                <Button />
+                <Kart />
+                
             </div>
         )
     }

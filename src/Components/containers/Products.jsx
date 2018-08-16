@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import ProductListing from '../presentation/ProductListing';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/actions';
@@ -19,8 +20,8 @@ class Products extends Component {
                 <h2>product page</h2>
                 {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div> <ul>
                     <li>Sorry No Stock ! </li>
-                    <li></li>
-                </ul>  </div>}
+                    <p> <NavLink to="/page">Contact</NavLink> </p>
+                 </ul>  </div>}
 
             </div>
 
