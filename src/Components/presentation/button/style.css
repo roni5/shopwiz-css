@@ -1,22 +1,22 @@
 
 .button{
-  background-color: #039be5;
+  background-color:rgba(  9, 66,121,1);
   text-decoration: none;
   color:#fff;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   text-align: center;
   margin: auto 0;
   outline: none;
   padding: 0.1em;
   padding-left:0.8em;
   padding-right:0.8em;
-
   border: 2px solid rgba(  9, 66,121,1) ;
   border-radius: 4px;
   width: 100px;
 }
 .button:hover{
-  background-color: rgba(  9, 66,121,1) ;
+  color:rgba(  9, 66,121,1);
+  background-color: rgb(245, 246, 248) ;
 }
 .button a::before {
   content: ' ';
