@@ -22,7 +22,7 @@ class Home extends Component {
                     </section>
                 </div>
                 <Kart />
-                <Button />
+                
             </div>
         )
     }

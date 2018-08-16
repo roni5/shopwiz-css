@@ -1,12 +1,13 @@
 
 let bkCr = {
-    backgroundColor: 'rgba( 52,106,158,1)'
+    backgroundColor: '#039be5'
   }
 const kart = {
         backgroundColor: bkCr.backgroundColor,
         padding: '.5em',
-        borderRadius: '4px',
-        borderColor: 'black',
-        width: '100%'
+        borderRadius: '5px',
+        borderColor: 'white',
+        width: '100%',
+    boxShadow: ' box-shadow: inset 2px 0 2px rgba(0, 0, 0, 0.15);'
   }
   export default { kart }

@@ -33,7 +33,6 @@ class About extends Component {
                             straight. Not every limb is perfect.
                      </p>
                     </div>
-                    <div><Link to="/">Back</Link> </div>
                 </section>
             </div>
         );

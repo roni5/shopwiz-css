@@ -12,7 +12,7 @@ class Page extends Component {
         return (
           <div styleName='centralized-container'>
             <div>
-              <h1>Contact</h1>
+              <h1>Contact Page Comp</h1>
               <ProductsSubmit />
               <div styleName='centralized-container'>
 

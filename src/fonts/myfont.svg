@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata></metadata>
 <defs>
-<font id="dinmittelschriftregular" horiz-adv-x="1024" >
+<font id="MyFont" horiz-adv-x="1024" >
 <font-face units-per-em="2048" ascent="1638" descent="-410" />
 <missing-glyph horiz-adv-x="491" />
 <glyph horiz-adv-x="0" />
@@ -231,4 +231,4 @@
 <glyph unicode="&#x2122;" horiz-adv-x="2027" d="M82 1311v147h668v-147h-254v-697h-160v697h-254zM901 614v844h250l235 -622l236 622h250v-844h-160v684l-274 -684h-105l-268 684l-4 -684h-160z" />
 <glyph unicode="&#x25fc;" horiz-adv-x="1034" d="M0 0v1034h1034v-1034h-1034z" />
 </font>
-</defs></svg> 
+</defs></svg>
