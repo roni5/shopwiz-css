@@ -1,9 +1,9 @@
 {
-  "name": "server",
+  "name": "shopwiz.net",
   "version": "1.0.0",
   "main": "app.js",
   "license": "yes",
-  "description": "React with css Modules",
+  "description": "shopwiz using css Modules",
   "repository": "https://github.com/roni5/shopwiz-css",
   "author": "Roni McGuinness",
   "private": true,

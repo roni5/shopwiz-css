@@ -106,5 +106,6 @@
   "description": "css modules for webpack",
   "main": "index.js",
   "author": "Roni McGuinness",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/roni5/shopwiz-css.git"
 }
