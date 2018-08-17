@@ -4,6 +4,9 @@ import  ProductsNews  from '../containers/ProductsNews';
 //<h2> {this.props.data.title}</h2>
 //<p>{this.props.data.body}</p>
 import PropTypes from 'prop-types';
+import CssModules from 'react-css-modules';
+import styles from './style.css';
+import  ThumbNail  from './thumbnail/ThumbNail';
 
 
 
@@ -13,9 +16,16 @@ class ProductDetail extends Component {
         return (
             <div>
 
-<h2> {this.props.data.title}</h2>
-<p>{this.props.data.body}</p>
-                <p> <NavLink to="/">Back</NavLink> </p>
+<h2 styleName="button"> {this.props.data.title}</h2>
+                 <div styleName='photo'>
+
+
+
+                    </div>
+                <div>  <ThumbNail >   </ThumbNail >  </div>
+                <div styleName="control-button">  {this.props.data.body} </div>
+                <section>
+                <p> <NavLink to="/">Back</NavLink> </p></section>
             </div>
         )
     }

@@ -15,14 +15,13 @@ class Home extends Component {
                         <h1>Products</h1>
                         <Products />
                         <div className="img">
-                            <img src="https://unsplash.it/200?random" height="200" width="200" />
                             <img src="https://unsplash.it/201?random" height="200" width="200" />
                         </div>
 
                     </section>
                 </div>
                 <Kart />
-                
+
             </div>
         )
     }

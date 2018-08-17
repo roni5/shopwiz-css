@@ -1,5 +1,5 @@
 
-.button{
+ :local(.button){
   background-color:rgba(  9, 66,121,1);
   text-decoration: none;
   color:#fff;
@@ -14,39 +14,13 @@
   border-radius: 4px;
   width: 100px;
 }
-.button:hover{
+:local(.button:hover){
   color:rgba(  9, 66,121,1);
   background-color: rgb(245, 246, 248) ;
 }
-.button a::before {
-  content: ' ';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-   color: transparent;
-  text-shadow: 0 transparent;
-  pointer-events: none;
- transition: text-shadow .2s,color .3s;
-  transform: translateX(-60%);
--webkit-box-shadow: 2px 3px 12px #222;
--moz-box-shadow: 2px 3px 12px #222;
-box-shadow: 2px 3px 12px #222;
-}
 
-.button a::before {
-  content: '•';
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  font-size: 1rem;
-  border:none;
-  color: transparent;
-  text-shadow: 0 0 transparent;
-  transform: translateX(-60%);
-}
- .button a:hover::before {
-    background-color: rgba(2, 37, 70, 1);
 
-}
+
+
 
 
