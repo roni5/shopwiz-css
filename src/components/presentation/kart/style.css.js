@@ -1,5 +1,5 @@
 
-let bkCr = {
+const bkCr = {
     backgroundColor: '#039be5'
   }
 const kart = {
@@ -8,6 +8,6 @@ const kart = {
         borderRadius: '5px',
         borderColor: 'white',
         width: '100%',
-    boxShadow: ' box-shadow: inset 2px 0 2px rgba(0, 0, 0, 0.15);'
+        boxShadow: ' outset 2px 0 2px rgba(0, 0, 0, 0.15);'
   }
   export default { kart }

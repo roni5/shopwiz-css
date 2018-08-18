@@ -7,25 +7,25 @@ import { fetchProducts } from '../../actions/actions';
 
 class Products extends Component {
 
-    componentDidMount(){
+    componentDidMount() {
         this.props.dispatch(fetchProducts());
     }
     render() {
-        const productsItems = this.props.products.map( (products, i) => {
-         return ( <li key={i}><ProductListing data = { products } /></li> );
+        const productsItems = this.props.products.map((products, i) => {
+            return (<li key={i}><ProductListing data={products} /></li>);
         });
 
-        return (<div>
-                        <div>
-                <h2>product page</h2>
-                {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div> <ul>
-                    <li>Sorry No Stock ! </li>
-                    <p> <NavLink to="/page">Contact</NavLink> </p>
-                 </ul>  </div>}
+        return (
+            <div>
+                <div>
+                    {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div>
+                        <ul>
+                            <li>Sorry No Stock ! </li>
+                            <p> <NavLink to="/page">Contact</NavLink> </p>
+                        </ul>  </div>}
 
+                </div>
             </div>
-
-        </div>
         )
     }
 }

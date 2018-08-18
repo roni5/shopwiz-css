@@ -10,7 +10,7 @@ class ProductListing extends Component {
     render() {
         return (
             <div>
-            <div styleName='grid-photo-wrap'>
+            <div styleName='centralized-container'>
                     <div styleName="control-buttons"><Link to={`/products/${this.props.data._id}`} >
                         <img  styleName="control-buttons"src="https://unsplash.it/201?random" height="200" width="200" />
                         <div styleName="button">{this.props.data.title} </div></Link>

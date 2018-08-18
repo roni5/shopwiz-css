@@ -11,14 +11,9 @@ const Photo = props => {
         <Link to={`/prodcuts/:postId`}>
           <img  src="https://unsplash.it/200?random" height="200" width="200" className="grid-photo" />
         </Link>
-
         <figcaption>
-
           <div className="control-buttons">
-
-            <Link className="button" to={`/products/`}>
-
-            </Link>
+            <Link className="button" to={`/products/`}>   </Link>
           </div>
         </figcaption>
       </div>

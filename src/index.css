@@ -36,13 +36,6 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-/**
- * Remove the gray background on active links in IE 10.
- */
 
 a {
   background-color: transparent;
@@ -176,8 +169,6 @@ textarea {
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
-
 
 [type="search"] {
   -webkit-appearance: textfield;
