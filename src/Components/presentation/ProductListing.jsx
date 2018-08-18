@@ -9,13 +9,17 @@ import styles from './style.css';
 class ProductListing extends Component {
     render() {
         return (
-            <div styleName='grid-photo'>
-                <figure styleName="grid-figure">
-                <hr/>
-                    <div styleName="single-photo"><Link to={`/products/${this.props.data._id}`}>
-                        <div styleName="button">{this.props.data.title} </div></Link></div>
-            <div><p> {this.props.data.teaser} </p></div>
-            </figure>
+            <div>
+            <div styleName='grid-photo-wrap'>
+                    <div styleName="control-buttons"><Link to={`/products/${this.props.data._id}`} >
+                        <img  styleName="control-buttons"src="https://unsplash.it/201?random" height="200" width="200" />
+                        <div styleName="button">{this.props.data.title} </div></Link>
+                    <div>
+               </div></div>
+                <figure styleName="labelbox">
+                <h3> {this.props.data.teaser} </h3>
+                    </figure>
+                    </div>
             </div>
 
         )
@@ -30,4 +34,4 @@ ProductListing.propTypes = {
     })
 };
 
-export default (ProductListing) ;
+export default CssModules(ProductListing, styles) ;
