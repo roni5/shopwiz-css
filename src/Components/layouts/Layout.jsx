@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import CssModules from 'react-css-modules';
 import n from './nav.css';
+
 //import PhotoGrid from "./photo/photogrid";
 //import Single from "./photo/single";
 //import Photo from "./photo/Photo";

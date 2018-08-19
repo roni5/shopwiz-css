@@ -11,8 +11,8 @@ class ProductListing extends Component {
         return (
             <div>
             <div styleName='photo-grid'>
-                    <div styleName='single-photo'><Link to={`/products/${this.props.data._id}`} >
-                        <img  styleName="control-buttons"src="https://unsplash.it/201?random" height="200" width="200" />
+                    <div  styleName='photo-grid'><Link to={`/products/${this.props.data._id}`} >
+                        <img   styleName='photo-grid' src="https://unsplash.it/201?random" height="250" width="300" />
                         <div styleName="button">{this.props.data.title} </div></Link>
                     <div>
                </div></div>
