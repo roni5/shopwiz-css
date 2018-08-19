@@ -3,9 +3,12 @@ import Products from '../containers/Products';
 import ProductDetail from '../presentation/ProductDetail';
 import CssModules from 'react-css-modules';
 import Button from '../presentation/button/Button';
+import Hello from '../presentation/Hello';
 import { Kart } from '../presentation/kart/Kart';
 import { Theme } from './theme/Theme';
 import Sticky from '../presentation/button/Sticky';
+import Icon from '../presentation/icon/Icon';
+import LoadingIcon from '../presentation/icon/LoadingIcon';
 import styles from './style.css';
 
 //import logo from './logo.png'; // Tell Webpack this JS file uses this image
@@ -16,7 +19,8 @@ class Home extends Component {
     render() {
         return (
             <div >
-
+               
+                <Icon icon='facebook'/><Hello name='roni'/>
                 <div>
                     <Sticky logoUrl={'http://via.placeholder.com/350x150'} alt={'logo'} />
                     <section>
@@ -27,7 +31,7 @@ class Home extends Component {
                         </div>
                     </section>
                 </div>
-
+               <Icon icon='trash'/>
                 <Kart />
 
             </div>

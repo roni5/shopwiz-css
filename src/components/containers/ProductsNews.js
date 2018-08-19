@@ -1,7 +1,8 @@
 import React, { Component} from 'react';
 import ProductDetail from '../presentation/ProductDetail';
 import { connect } from 'react-redux';
-import { fetchProductsItem , productsItemLoading } from '../../actions/actions';
+import { fetchProductsItem, productsItemLoading } from '../../actions/actions';
+import LoadingIcon from '../presentation/icon/LoadingIcon';
 
 
 class ProductsNews extends Component {
@@ -14,12 +15,16 @@ class ProductsNews extends Component {
     render(){
         let { productsItem } = this.props;
 
+            if (this.props.productsItemLoading ) {
+              return   <LoadingIcon />;
+            }
+
         return (
             <div>
                 <h2>Products News </h2>
                 <div>
                     <div>Shopwiz.net</div>
-                       
+
                     <div>  {!this.props.productsItemLoading ? <ProductDetail data={productsItem} /> : null} </div>
                 </div>
             </div>

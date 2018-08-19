@@ -17,7 +17,7 @@ class ProductDetail extends Component {
             <div>
 
 <h2 styleName="button"> {this.props.data.title}</h2>
-                 <div styleName='photo'>
+                 <div styleName='photo-grid'>
 
                     </div>
                 <div>  <ThumbNail >   </ThumbNail >  </div>

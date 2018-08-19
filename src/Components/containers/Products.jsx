@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import ProductListing from '../presentation/ProductListing';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/actions';
+import LoadingIcon from '../presentation/icon/LoadingIcon';
 //import { fetchProductsItem } from '../../actions/actions';
 
 class Products extends Component {
