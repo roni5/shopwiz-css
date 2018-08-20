@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import Products from '../containers/Products';
-import ProductDetail from '../presentation/ProductDetail';
 import CssModules from 'react-css-modules';
 import Button from '../presentation/button/Button';
 import ProductsSubmit from '../containers/ProductsSubmit';
-
+import Icon from '../presentation/icon/Icon';
 import styles from './style.css';
 
 class Page extends Component {
@@ -12,8 +10,8 @@ class Page extends Component {
         return (
           <div styleName='centralized-container'>
             <div>
-              <h1>Contact Page Comp</h1>
-              <ProductsSubmit />
+              <h5> <span><Icon icon='email'/> </span><span>Sales@Shopwiz.net</span></h5>
+
               <div styleName='centralized-container'>
 
                 <img src="https://unsplash.it/200?random" height="200" width="200" />

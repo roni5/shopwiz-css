@@ -16,14 +16,14 @@ class ProductDetail extends Component {
         return (
             <div>
 
-<h2 styleName="button"> {this.props.data.title}</h2>
+<h2 styleName="container"> {this.props.data.title}</h2>
                  <div styleName='photo-grid'>
 
                     </div>
                 <div>  <ThumbNail >   </ThumbNail >  </div>
-                <div styleName="control-button">  {this.props.data.body} </div>
+                <div styleName="grid-figure">  {this.props.data.body} </div>
                 <section>
-                <p> <NavLink to="/">Back</NavLink> </p></section>
+                </section>
             </div>
         )
     }
@@ -37,4 +37,4 @@ ProductDetail.propTypes = {
     })
 };
 
-export default ProductDetail;
+export default CssModules(ProductDetail, styles)  ;

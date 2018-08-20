@@ -8,7 +8,7 @@ class Button extends React.Component {
     return (
       <div>
         <button>
-        <Link to={'/'} styleName='button'>  Back </Link>
+        <Link to={'/'} styleName='teaser'>  Back </Link>
         </button>
 
       </div>

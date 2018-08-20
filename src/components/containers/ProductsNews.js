@@ -21,12 +21,7 @@ class ProductsNews extends Component {
 
         return (
             <div>
-                <h2>Products News </h2>
-                <div>
-                    <div>Shopwiz.net</div>
-
-                    <div>  {!this.props.productsItemLoading ? <ProductDetail data={productsItem} /> : null} </div>
-                </div>
+                <h2>  {!this.props.productsItemLoading ? <ProductDetail data={productsItem} /> : null} </h2>
             </div>
         )
     }

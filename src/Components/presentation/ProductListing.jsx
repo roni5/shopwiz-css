@@ -12,7 +12,7 @@ class ProductListing extends Component {
             <div>
             <div styleName='photo-grid'>
                     <div  styleName='photo-grid'><Link to={`/products/${this.props.data._id}`} >
-                        <img   styleName='photo-grid' src="https://unsplash.it/201?random" height="250" width="300" />
+                        <img   styleName='photo-grid' src="https://res.cloudinary.com/shopwiz-net/image/upload/v1534764357/more-trees-03.png" height="250" width="300" />
                         <div styleName="button">{this.props.data.title} </div></Link>
                     <div>
                </div></div>
