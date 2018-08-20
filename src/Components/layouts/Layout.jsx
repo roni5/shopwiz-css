@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import CssModules from 'react-css-modules';
 import n from './nav.css';
+import Footer from './footer/Footer';
+import Clearfix from './theme/Clearfix';
+//import PhotoGrid from "./photo/photogrid";
+//import Single from "./photo/single";
+//import Photo from "./photo/Photo";
 
 
 
@@ -9,6 +14,7 @@ import n from './nav.css';
 class Layout extends Component {
     render() {
         return (
+            <div>
             <nav >
                 <ul>
                     <li> <NavLink to="/" styleName='siteHeader'>  {'\u2728'} Shopwiz </NavLink></li>
@@ -20,8 +26,12 @@ class Layout extends Component {
                     {this.props.children}
 
                 </div>
-            </nav>
-
+                </nav>
+                <div styleName='bottom'>
+                    <Footer />
+                </div>
+                <Clearfix />
+                </div>
         );
     }
 }

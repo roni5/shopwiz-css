@@ -1,0 +1,133 @@
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.button {
+  background-color:#E30099;
+  text-decoration: none;
+  color:#fff;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto 0;
+  outline: none;
+  padding: 0.4em;
+  padding-left: 5.5em;
+  padding-right:5.5em;
+  border: 2px solid #AF0076 ;
+  border-radius: 4px;
+  width: 100px;
+  border-radius: 0.3em;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-basis: 60%;
+  display: inline-block;
+  line-height: 1.6;
+  text-decoration: none;
+  margin: auto 0%;
+  text-align: center;
+  color: white;
+  border-color: 2px solid #AF0076;
+  padding: 0%;
+  box-sizing: padding-box;
+  background-color: #E30099;
+}
+.labelbox {
+  font: bold 0.8em/1.4;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 0.2em;
+  display: inline-block;
+  padding: 0.4em ;
+  display: block;
+  border: 1px solid #666;
+  background: #fff; /* Old browsers */
+  color: black;
+  text-align: center;
+  flex: 1 0 60%;
+  padding-left: 22px;
+  margin: 1em;
+}
+.grid-figure,
+.single-photo {
+  flex-basis: calc(33.333% - 5rem);
+  flex-grow: 1;
+  flex-shrink: 0;
+  vertical-align: middle;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+  border: 1px solid #edeeed;
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03);
+
+  justify-content: center;
+}
+.single-photo {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+}
+.single-photo .grid-figure {
+  box-shadow: none;
+  margin: 0 2rem 0 0;
+  border: 0;
+  padding: 25%;
+  flex: 1 0 70%;
+  max-width: 70%;
+  text-decoration:none;
+  list-style: none
+}
+.single-photo {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+.single-photo .grid-photo {
+  width: 100%;
+  margin: 0;
+}
+.grid-photo {
+  width: calc(100% + 5rem);
+  margin-left: -2rem;
+  margin-top: -2rem;
+  max-width: none;
+}
+
+.grid-photo-wrap {
+  position: relative;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  display: inline-block;
+  line-height: 1.6;
+  text-decoration: none;
+  margin: auto 0%;
+  text-align: center;
+  color: white;
+  border-color: 2px solid #125688;
+  padding: 0%;
+  transition: all 0.2s;
+  box-sizing: padding-box;
+  background-color: #E30099;
+}
+button:hover,
+.button:hover,
+button:focus,
+.button:focus {
+  background-color: rgb(255, 255, 255);
+  border-color: #AF0076;
+  color: #E30099;
+}

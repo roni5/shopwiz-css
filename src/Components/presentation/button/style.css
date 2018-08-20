@@ -1,52 +1,29 @@
 
-.button{
-  background-color:rgba(  9, 66,121,1);
+:local(.teaser){
+  background-color:#E30099;
   text-decoration: none;
   color:#fff;
   font-size: 0.8rem;
   text-align: center;
   margin: auto 0;
   outline: none;
-  padding: 0.1em;
-  padding-left:0.8em;
-  padding-right:0.8em;
-  border: 2px solid rgba(  9, 66,121,1) ;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  padding-right:1.5em;
+  //border: 2px solid rgba(  9, 66,121,1) ;
   border-radius: 4px;
   width: 100px;
-}
-.button:hover{
-  color:rgba(  9, 66,121,1);
-  background-color: rgb(245, 246, 248) ;
-}
-.button a::before {
-  content: ' ';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-   color: transparent;
-  text-shadow: 0 transparent;
-  pointer-events: none;
- transition: text-shadow .2s,color .3s;
-  transform: translateX(-60%);
--webkit-box-shadow: 2px 3px 12px #222;
--moz-box-shadow: 2px 3px 12px #222;
-box-shadow: 2px 3px 12px #222;
-}
-
-.button a::before {
-  content: '•';
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  font-size: 1rem;
-  border:none;
-  color: transparent;
-  text-shadow: 0 0 transparent;
-  transform: translateX(-60%);
-}
- .button a:hover::before {
-    background-color: rgba(2, 37, 70, 1);
+  border-radius: 0.3em;
 
 }
+:local(.teaser:hover){
+  color:  rgb(231, 20, 161) ;
+  background-color: rgb(253, 251, 252) ;
+
+}
+
+
+
+
 
 

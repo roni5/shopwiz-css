@@ -1,5 +1,0 @@
-.image {
-  border-radius: 3px;
-  composes: image;
-  border:  solid 2px royalblue;
-}
