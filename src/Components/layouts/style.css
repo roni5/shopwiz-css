@@ -109,6 +109,7 @@ h1  {
   color: #E30099;
   font-family: MyFont,neuzeit-grotesk,Helvetica,Arial,sans-serif;;
   text-align: center;
+  margin: 0.6em auto;
 }
 .warning {
   background-color: red;
