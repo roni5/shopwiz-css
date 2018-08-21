@@ -7,6 +7,8 @@ import { Kart } from '../presentation/kart/Kart';
 import { Theme } from './theme/Theme';
 import Sticky from '../presentation/button/Sticky';
 import Icon from '../presentation/icon/Icon';
+import Link  from '../presentation/icon/Link';
+import Click from '../presentation/icon/Click';
 import styles from './style.css';
 import Clearfix from './theme/Clearfix';
 
@@ -17,9 +19,13 @@ class Home extends Component {
     render() {
         return (
             <div >
+                <span><Click /> </span> <span><Link href={'https://www.linkedin.com/in/ronimcguinness/'} /> </span>
+                <div><p>The Mongo DB is Live So No Products</p> </div>
                 <Clearfix />
                 <div stylesName="img">
                     <Sticky logoUrl={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png'} alt={'logo'} />
+
+
                     <section>
                         <Theme />
                         <Products />

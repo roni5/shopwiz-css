@@ -14,7 +14,7 @@ import React from 'react';
 
 
 const Icon = props => (
-  <svg width="22" height="22" viewBox="0 0 1024 1024">
+  <svg width="42" height="42" viewBox="0 0 1024 1024">
     <path d={icons[props.icon]}></path>
   </svg>
 );
