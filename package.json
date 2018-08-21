@@ -1,4 +1,5 @@
 {
+  "homepage": "https://roni5.github.io/shopwiz-css/",
   "name": "shopwiz-css",
   "version": "0.1.0",
   "private": false,
@@ -56,6 +57,7 @@
     "prop-types": "^15.6.2"
   },
   "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
