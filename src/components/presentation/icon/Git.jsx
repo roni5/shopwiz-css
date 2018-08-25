@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon from '../../presentation/icon/Icon';
+import Icon from './Icon';
 
-export default class Click extends React.Component {
+export default class Git extends React.Component {
   onClick = (e) => {
     //e.preventDefault()
    // console.log('onclick..')

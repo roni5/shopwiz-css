@@ -24,13 +24,14 @@ class Link extends React.Component {
     //this.props.text
     //this.props.url;
     //alert(this.props.href);
+    <button> </button>
 
   }
 
   render() {
     return <div>
-      <a onClick={this.onClick} href={this.props.href} ><span> <IconSet icon={ICONS.LINKEDIN} /></span></a>
-      <div> <p> Click on Git Hub or  LinkedIn </p> </div>
+      <a onClick={this.onClick} href={this.props.href} ><button> <IconSet icon={ICONS.LINKEDIN}  /></button></a>
+      <div> <p>  </p> </div>
       </div>
   }
 }
