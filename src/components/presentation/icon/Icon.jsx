@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/Button';
 //mport {propTypes }from 'prop-types'
 
 
@@ -12,15 +13,45 @@ import React from 'react';
     'facebook': 'M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z'
   };
 
+//<path d={icons[props.icon]}></path>
+const Icon = props => {
+  const styles = {
+    svg: {
+      display: 'inline-block',
+      verticalAlign: 'middle',
+    },
+    path: {
+      fill: props.color,
+    },
+  };
 
-const Icon = props => (
-  <svg width="42" height="42" viewBox="0 0 1024 1024">
-    <path d={icons[props.icon]}></path>
-  </svg>
-);
-//const { PropTypes } = React;
-//Icon.propTypes = {
+  return (
+
+      <button>
+    <svg
+      style={styles.svg}
+      width={`${props.size}px`}
+      height={`${props.size}px`}
+      viewBox="0 0 1024 1024"
+    >
+      <path
+        style={styles.path}
+        d={icons[props.icon]}
+      ></path>
+        </svg>
+        </button>
+
+  );
+};
+
+//IconSet.propTypes = {
  // icon: PropTypes.string.isRequired,
+ // size: PropTypes.number,
+ // color: PropTypes.string,
 //};
+
+Icon.defaultProps = {
+  size: 20,
+};
 
 export default Icon;

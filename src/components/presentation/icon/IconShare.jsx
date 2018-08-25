@@ -2,15 +2,23 @@ import React from 'react';
 import IconSet from './IconSet.jsx';
 import {ICONS} from './constants';
 
-const shareVia = {
-  facebook: 'http://facebook.com/shopwiz.net',
-  linkin: 'http://linkin.com',
-  twitter: 'https://twitter.com'
+ const link = {
+ facebook: 'http://facebook.com/shopwiz.net',
+ twitter: 'http://twitter.com',
+ google: 'http://google.com',
+ linkin: 'http://linkin.com',
+ beer: 'http://github'
+};
+function GetshareVia(itemName, link){
+ const shareVia = link[itemName];
+ return shareVia;
 }
-const facebook = 'http://facebook.com/shopwiz.net';
-const IconShare = props => (
+const testshareVia = GetshareVia('facebook', link);
+console.log(testshareVia); //
+
+const IconShare = (props ) => (
   <div>
-    <button onClick={() => props.facebook('faceboook')}>
+    <button onClick={() => props.GetshareVia('facebook', link)}>
       <IconSet icon={ICONS.CLOUD_CHECK} />
     </button>
     <button onClick={() => props.shareVia('twitter')}>

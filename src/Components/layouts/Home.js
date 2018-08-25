@@ -4,30 +4,31 @@ import ProductDetail from '../presentation/ProductDetail';
 import CssModules from 'react-css-modules';
 import Button from '../presentation/button/Button';
 import { Kart } from '../presentation/kart/Kart';
-import { Theme } from './theme/Theme';
-import Sticky from '../presentation/button/Sticky';
+//import { Theme } from './theme/Theme';  <Theme />   .ccs.js
+//import Sticky from '../presentation/button/Sticky';  <Sticky logoUrl={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png'} alt={'logo'} />
+import Image from '../presentation/button/Image';
+//import MyImage from '../presentation/button/MyImage';  <MyImage alt={'Shopwiz.net'}  src={'http://placekitten.com/g/64/64'}/>
 import Icon from '../presentation/icon/Icon';
-import Link  from '../presentation/icon/Link';
-import Click from '../presentation/icon/Click';
+import Git from '../presentation/icon/Git';
+//import IconShare from '../presentation/icon/IconShare';
 import styles from './style.css';
 import Clearfix from './theme/Clearfix';
 
-//import logo from './logo.png'; // Tell Webpack this JS file uses this image
-//console.log(logo); // /logo.84287d09.png
+//<IconShare />
 
 class Home extends Component {
+    //let src = 'https://media.mfbproject.co.za/repos/2017_alfa-romeo_stelvio_leaked_02.jpg';
+
     render() {
         return (
             <div >
-                <span><Click /> </span> <span><Link href={'https://www.linkedin.com/in/ronimcguinness/'} /> </span>
-                <div><p>The Mongo DB is Live So No Products</p> </div>
+                <span> <Git /> </span>
                 <Clearfix />
                 <div stylesName="img">
-                    <Sticky logoUrl={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png'} alt={'logo'} />
-
-
+                       <Image src={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png '} fallbackSrc={'http://placekitten.com/g/64/64'} />
                     <section>
-                        <Theme />
+                        <div><p> "ScrapBook" using React CssModule, Node Express server with Mongoose and Mongo DB dynamic Url for (Live Products). Not a functional ES6 stateless object deconstruction exercise </p>
+                            </div>
                         <Products />
                         <Clearfix />
                     </section>
