@@ -27,18 +27,13 @@ class Home extends Component {
                 <div>
                 <div stylesName="img">
                         <Image src={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png '} fallbackSrc={'http://placekitten.com/g/64/64'} />
-
-
                     </div>
                     <Clearfix />
                     <div stylesName='centralized-container'>
-
-
                         <Products />
-
-
                         </div>
                     <Clearfix />
+                    
                 </div>
                 <Clearfix />
 

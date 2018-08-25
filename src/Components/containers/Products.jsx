@@ -6,6 +6,7 @@ import { fetchProducts } from '../../actions/actions';
 import LoadingIcon from '../presentation/icon/LoadingIcon';
 //import { fetchProductsItem } from '../../actions/actions';
 import Clearfix from '../layouts/theme/Clearfix';
+import detail from  '../presentation/img/detail.png';
 
 class Products extends Component {
 
@@ -29,6 +30,7 @@ class Products extends Component {
                             <li> Mern Stack Mongo DB is Live </li>
                             <li> Not a Stateless deconstruction exercise </li>
                             <li>-----------</li>
+                            <li><img src={detail} alt="productview" /></li>
                             </ul>
                             <div></div>
                             <Clearfix />
