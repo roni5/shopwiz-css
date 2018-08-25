@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { fetchProducts } from '../../actions/actions';
 import LoadingIcon from '../presentation/icon/LoadingIcon';
 //import { fetchProductsItem } from '../../actions/actions';
+import Clearfix from '../layouts/theme/Clearfix';
 
 class Products extends Component {
 
@@ -20,10 +21,20 @@ class Products extends Component {
             <div>
                 <div>
                     {(this.props.products.length > 0) ? <ul>{productsItems}</ul> : <div>
+                      <Clearfix />
                         <ul>
                             <li>Sorry No Stock ! </li>
+                            <li>-----------</li>
+                            <li> ScrapBook using React CssModule</li>
+                            <li> Mern Stack Mongo DB is Live </li>
+                            <li> Not a Stateless deconstruction exercise </li>
+                            <li>-----------</li>
+                            </ul>
+                            <div></div>
+                            <Clearfix />
+
                             <p> <NavLink to="/page">Contact</NavLink> </p>
-                        </ul>  </div>}
+                        </div>}
 
                 </div>
             </div>

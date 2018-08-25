@@ -22,6 +22,7 @@ class ProductsNews extends Component {
         return (
             <div>
                 <h2>  {!this.props.productsItemLoading ? <ProductDetail data={productsItem} /> : null} </h2>
+                {this.props.children}
             </div>
         )
     }

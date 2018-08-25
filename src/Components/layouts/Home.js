@@ -21,17 +21,23 @@ class Home extends Component {
 
     render() {
         return (
-            <div >
+            <div stylesName='centralized-container'>
                 <span> <Git /> </span>
                 <Clearfix />
+                <div>
                 <div stylesName="img">
-                       <Image src={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png '} fallbackSrc={'http://placekitten.com/g/64/64'} />
-                    <section>
-                        <div><p> "ScrapBook" using React CssModule, Node Express server with Mongoose and Mongo DB dynamic Url for (Live Products). Not a functional ES6 stateless object deconstruction exercise </p>
-                            </div>
+                        <Image src={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png '} fallbackSrc={'http://placekitten.com/g/64/64'} />
+
+
+                    </div>
+                    <Clearfix />
+                    <div stylesName='centralized-container'>
+
+
                         <Products />
-                        <Clearfix />
-                    </section>
+
+
+                        </div>
                     <Clearfix />
                 </div>
                 <Clearfix />
