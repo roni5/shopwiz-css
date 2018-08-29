@@ -44,7 +44,7 @@ const Icon = props => {
   );
 };
 
-//IconSet.propTypes = {
+//Icon.propTypes = {
  // icon: PropTypes.string.isRequired,
  // size: PropTypes.number,
  // color: PropTypes.string,

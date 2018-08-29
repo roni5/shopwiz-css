@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Icon from '../../presentation/icon/Icon';
+//import Icon from '../../presentation/icon/Icon';
 import CssModules from 'react-css-modules';
 import styles from './styles.css';
 import Clearfix from '../theme/Clearfix';
@@ -23,7 +23,7 @@ class Footer extends Component {
           <h4 >
             &copy; {this.state.year} Shopwiz.net
           </h4>
-          {this.props.children}
+        
         </div>
       </div>
     )

@@ -1,4 +1,5 @@
-import React, { PropTypes } from "react";
+import React from "react";
+import PropTypes from 'prop-types';
 
 const Image = ({ src, fallbackSrc, ...other }) => {
   let element;
@@ -15,8 +16,8 @@ const Image = ({ src, fallbackSrc, ...other }) => {
   );
 };
 
-//Image.propTypes = {
+Image.propTypes = {
   //src: PropTypes.string,
   //fallbackSrc: PropTypes.string
-//};
+};
 export default Image;

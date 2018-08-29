@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import  ProductsNews  from '../containers/ProductsNews';
+//import { NavLink } from 'react-router-dom';
+//import  ProductsNews  from '../containers/ProductsNews';
 //<h2> {this.props.data.title}</h2>
 //<p>{this.props.data.body}</p>
 import PropTypes from 'prop-types';
@@ -31,9 +31,9 @@ class ProductDetail extends Component {
 
 ProductDetail.propTypes = {
     data: PropTypes.shape({
-        _id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        body: PropTypes.string.isRequired
+        _id: PropTypes.string,
+        title: PropTypes.string,
+        body: PropTypes.string
     })
 };
 

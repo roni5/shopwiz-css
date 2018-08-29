@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, BrowserRouter,Link } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import About from './components/layouts/About';
@@ -13,7 +13,7 @@ import Button from './components/presentation/button/Button'
 import Home from './components/layouts/Home';
 import Products from './components/containers/Products';
 import ProductsNews from './components/containers/ProductsNews';
-import ProductDetail from './components/presentation/ProductDetail';
+//import ProductDetail from './components/presentation/ProductDetail';
 import ProductsSubmit from './components/containers/ProductsSubmit';
 import Page from './components/layouts/Page';
 //import  Hello  from './Hello';
@@ -52,7 +52,7 @@ class App extends Component {
               </Switch>
               <div className="centralized-container">
                 <section>
-                
+
                 </section>
               </div>
               <div>

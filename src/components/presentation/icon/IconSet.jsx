@@ -1,11 +1,12 @@
 import React from 'react';
-const {PropTypes} = React;
+import PropTypes from 'prop-types';
 
 const IconSet = props => {
   const styles = {
     svg: {
       display: 'inline-block',
-      verticalAlign: 'middle',
+      textAlign: 'center',
+      border:'none',
     },
     path: {
       fill: props.color,
@@ -27,11 +28,10 @@ const IconSet = props => {
   );
 };
 
-//IconSet.propTypes = {
- // icon: PropTypes.string.isRequired,
- // size: PropTypes.number,
- // color: PropTypes.string,
-//};
+IconSet.propTypes = {
+  icon: PropTypes.string,
+  size: PropTypes.number,
+};
 
 IconSet.defaultProps = {
   size: 16,

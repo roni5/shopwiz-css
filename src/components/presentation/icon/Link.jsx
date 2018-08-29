@@ -6,7 +6,6 @@ import IconShare from './IconShare';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-
   url: PropTypes.string.isRequired,
   text:  PropTypes.string.isRequired
 };

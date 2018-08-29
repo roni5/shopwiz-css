@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import ProductDetail from '../presentation/ProductDetail';
 import { connect } from 'react-redux';
-import { fetchProductsItem, productsItemLoading } from '../../actions/actions';
+import { fetchProductsItem } from '../../actions/actions';
 import LoadingIcon from '../presentation/icon/LoadingIcon';
 import detail from  '../presentation/img/detail.png';
 

@@ -13,8 +13,13 @@ import Git from '../presentation/icon/Git';
 //import IconShare from '../presentation/icon/IconShare';
 import styles from './style.css';
 import Clearfix from './theme/Clearfix';
+import Properties from '../presentation/listings/Properties';
+import TestShareVia from '../presentation/listings/TestShareVia';
+import IconShare from '../presentation/icon/IconShare';
+import Toggle from '../presentation/toggle/Toggle';
+import ShareIt from '../presentation/icon/ShareIt';
+//import OuterClick from '../presentation/toggle/OuterClick';
 
-//<IconShare />
 
 class Home extends Component {
     //let src = 'https://media.mfbproject.co.za/repos/2017_alfa-romeo_stelvio_leaked_02.jpg';
@@ -33,7 +38,14 @@ class Home extends Component {
                         <Products />
                         </div>
                     <Clearfix />
-                    
+                    <Properties />
+                    <Clearfix />
+                    <div>  <Toggle /></div>
+                    <Clearfix />
+                    <div><p></p></div>
+                    <Clearfix />
+                    <div><p>                    <ShareIt />
+                    <TestShareVia /></p></div>
                 </div>
                 <Clearfix />
 
