@@ -1,0 +1,12 @@
+.custom-overlay {
+  background: rgba(36, 123, 160, 0.7);
+  box-sizing: border-box;
+}
+.custom-modal {
+  background: #ff1493;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto !important;
+}
+.padbox { padding-top: 10px;padding-right: 10px;}

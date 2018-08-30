@@ -14,10 +14,14 @@ import Git from '../presentation/icon/Git';
 import styles from './style.css';
 import Clearfix from './theme/Clearfix';
 import Properties from '../presentation/listings/Properties';
-import TestShareVia from '../presentation/listings/TestShareVia';
+import  {FaceShare} from '../presentation/listings/Share';
 import IconShare from '../presentation/icon/IconShare';
 import Toggle from '../presentation/toggle/Toggle';
 import ShareIt from '../presentation/icon/ShareIt';
+import SimpleUsage from '../presentation/button/SimpleUsage';
+import BasicModal from '../presentation/button/BasicModal';
+import CustomStyling from '../presentation/button/CustomStyling';
+import NewModal from '../presentation/modal/NewModal';
 //import OuterClick from '../presentation/toggle/OuterClick';
 
 
@@ -29,6 +33,7 @@ class Home extends Component {
             <div stylesName='centralized-container'>
                 <span> <Git /> </span>
                 <Clearfix />
+
                 <div>
                 <div stylesName="img">
                         <Image src={'http://res.cloudinary.com/shopwiz-net/image/upload/c_scale,w_325/v1534764386/shopwiz-new-logo8_1.png '} fallbackSrc={'http://placekitten.com/g/64/64'} />
@@ -40,12 +45,18 @@ class Home extends Component {
                     <Clearfix />
                     <Properties />
                     <Clearfix />
+
+                    <div><p> <FaceShare /><ShareIt /></p></div>
+                    <Clearfix />
+
+                    <div><p> </p></div>
+                    <Clearfix />
+                    <NewModal />
+                    < BasicModal/>
+
+                    <div><p>  <div><SimpleUsage/> </div> </p></div>
+                    <div> <CustomStyling /> </div>
                     <div>  <Toggle /></div>
-                    <Clearfix />
-                    <div><p></p></div>
-                    <Clearfix />
-                    <div><p>                    <ShareIt />
-                    <TestShareVia /></p></div>
                 </div>
                 <Clearfix />
 
