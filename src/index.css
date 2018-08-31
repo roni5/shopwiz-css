@@ -76,8 +76,12 @@ input {
 button,
 select {
   text-transform: none;
+  border-radius: 3px;
+  border: 0px;
 }
-
+&:hover {
+  border: 0px;
+}
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -99,6 +103,7 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
+
 }
 
 /**
@@ -110,6 +115,7 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+  border: 1px;
 }
 
 /**

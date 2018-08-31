@@ -19,6 +19,7 @@ const Icon = props => {
     svg: {
       display: 'inline-block',
       verticalAlign: 'middle',
+      border: 0
     },
     path: {
       fill: props.color,

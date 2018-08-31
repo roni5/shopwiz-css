@@ -128,6 +128,6 @@ button:hover,
 button:focus,
 .button:focus {
   background-color: rgb(255, 255, 255);
-  border-color: #AF0076;
+  border: 0px;
   color: #E30099;
 }

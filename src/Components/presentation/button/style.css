@@ -18,6 +18,7 @@
 :local(.teaser:hover){
   color:  rgb(231, 20, 161) ;
   background-color: rgb(253, 251, 252) ;
+  border: none;
 
 }
 

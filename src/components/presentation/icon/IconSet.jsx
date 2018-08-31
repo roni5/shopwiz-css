@@ -6,7 +6,8 @@ const IconSet = props => {
     svg: {
       display: 'inline-block',
       textAlign: 'center',
-      border:'none',
+      borderRadius: 0,
+      border: 0
     },
     path: {
       fill: props.color,

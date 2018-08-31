@@ -1,6 +1,6 @@
 :local(.border ){
-  border-radius: 3px;
+  border-radius: 0px;
   margin:  10px 5px;
   padding: auto 0;
-  border:  solid 2px #AF0076;;
+  border:  solid 0px #AF0076;;
 }
