@@ -17,7 +17,7 @@ class Layout extends Component {
             <div>
             <nav >
                 <ul>
-                    <li> <NavLink to="/" styleName='siteHeader'>  {'\u2728'} Shopwiz </NavLink></li>
+                    <li> <NavLink to="/" styleName='siteHeader'>Shopwiz</NavLink></li>
                     <li ><NavLink to={'/'} styleName='siteHeader'> Home</NavLink></li>
                     <li><NavLink to={'/contact'} styleName='siteHeader'>Contact </NavLink></li>
                     <li><NavLink to={'/about'} styleName='siteHeader'>About </NavLink></li>
